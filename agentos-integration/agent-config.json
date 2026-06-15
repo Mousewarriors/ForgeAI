@@ -1,0 +1,39 @@
+{
+  "id": "forgeai",
+  "name": "ForgeAI",
+  "engine": "AI App Builder",
+  "location": "local",
+  "type": "local-web-app",
+  "color": "#8b5cf6",
+  "icon": "FA",
+  "enabled": true,
+  "workspace": {
+    "defaultTab": "nativeUi",
+    "dataMode": "read-only",
+    "tabs": {
+      "overview": true,
+      "nativeUi": true,
+      "projects": false,
+      "memories": false,
+      "logs": false,
+      "config": false,
+      "actions": true
+    },
+    "nativeUi": {
+      "enabled": true,
+      "mode": "iframe",
+      "url": "http://localhost:3000/",
+      "externalUrl": "http://localhost:3000/",
+      "label": "ForgeAI Studio",
+      "launchAction": "open-control"
+    }
+  },
+  "data": {
+    "rootDir": "C:\\ForgeAI",
+    "url": "http://localhost:3000/"
+  },
+  "health": {
+    "type": "http",
+    "url": "http://localhost:3000/"
+  }
+}
